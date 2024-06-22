@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: "Poppins", sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(18, 18, 62);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style-type: none;
+            margin: 0 23px;
+            cursor: pointer;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(114, 114, 204);
+            font-size: 1.02rem;
+        }
+
+        nav .left {
+            font-size: 1.5rem;
+        }
+
+        main hr {
+            margin: 40px 84px;
+            border: 0px;
+            background: #9c97f1;
+            height: 1.2px;
+
+
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 100px 0px;
+        }
+
+        .firstsection>div {
+            width: 40%;
+        }
+
+        .leftSection {
+            font-size: 3rem;
+
+        }
+        .leftSection buttons{
+            padding: 50px 10px;
+        }
+        .leftSection .btn{
+            padding: 10px;
+            background: #1e2167;
+            color: white;
+            border: 1px solid white;
+            border-radius: 6px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        .rightSection img {
+            width: 70%;
+
+        }
+
+        .red {
+            color: rgb(170, 107, 228);
+        }
+
+        .text-gray {
+            color: gray;
+        }
+
+        #element {
+            color: rgb(170, 107, 228);
+            ;
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .secondSection h1 {
+            font-size: 1.6rem;
+        }
+
+        .project-container {
+            margin: 80px 100px;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .project-container h3 {
+            margin: 10px 0px;
+
+        }
+
+        .project-container h5 {
+            height: 10px;
+        }
+
+        .project-1 {
+            width: 300px;
+            height: 200px;
+            border: 10px;
+        }
+        .proj1:hover{
+            opacity: 80%;
+        }
+
+        .projects {
+            display: flex;
+        }
+
+        .projects .github {
+            text-decoration: none;
+            color: white;
+        }
+
+        .projects .github:hover {
+            color: rgb(104, 104, 123);
+            font-size: 1.02rem;
+        }
+        .footer{
+            background-color: rgb(18,18,62);
+            
+        }
+        .footer{
+            display: flex;
+            padding: 23px 123px;
+            justify-content: space-evenly;
+        }
+        .footer li{
+            list-style: none;
+        }
+        .footer>div{
+            width: 223px;
+        }
+        footer .footer-rights{
+            text-align: center;
+            color: gray;
+            padding: 10px 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Lingaraj's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftSection">Hi, My name is <span class="red">Lingaraj</span>
+                <div>and I am Passionate </div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn">Download Resume</button>
+                    <button class="btn">Github</button>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="bg.png" alt="portfolio" />
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection">
+            <span class="text-gray">What I have done so far</span>
+            <h1>Projects</h1>
+            <div class="projects">
+                <div class="container">
+                    <div class="project-container">
+                        <h3>Blog-website</h3>
+                        <a class="proj1" href="https://blogging-website-pearl.vercel.app/signup"><img class="project-1"
+                                src="blog signup.png" alt="blog-website photo" /></a>
+                        <a class="github" href="https://github.com/lingaraj2020/blogging-website">
+                            <h5>Github repo</h5>
+                        </a>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="project-container">
+                        <h3>Foodie-app</h3>
+                        <a class="proj1" href="https://foodie-app-plum.vercel.app/login"><img class="project-1" src="food-signin.png"
+                                alt="Foodie-app photo" /></a>
+                        <a class="github" href="https://github.com/lingaraj2020/Foodie-App">
+                            <h5>Github repo</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Lingaraj's portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                    <li>Services</li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                    <li>Services</li>
+                </ul>
+            </div>
+            <div class="footer-fourth">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                    <li>Services</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">
+            Copyright&#169;lingarajportfolio.com  | All rights reserved
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Frontend Developer', 'Full stack Developer'],
+            typeSpeed: 50,
+        });
+    </script>
+
+</body>
+
+</html>
