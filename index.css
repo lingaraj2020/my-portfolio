@@ -127,6 +127,7 @@ main hr {
 
 .projects {
   display: flex;
+  justify-content: center;
 }
 
 .projects .github {
